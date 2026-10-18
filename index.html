@@ -24,7 +24,7 @@ if (!isPS4) {
     if (window.applicationCache.status == '0') {
         if (fwNum == 5.05 || fwNum == 5.07) {
             window.location.replace("cache505.html");
-             } else if (fwNum >= 6.00 && fwNum <= 6.72) {
+             } else if (fwNum >= 6.00 && fwNum === 6.72) {
             window.location.replace("cache672.html");
         } else if (fwNum >= 7.00 && fwNum <= 8.52) {
             window.location.replace("cache700.html");
@@ -53,7 +53,7 @@ if (!isPS4) {
             script.onerror = onScriptError;
             document.head.appendChild(script);
         }
-              else if (fwNum >= 6.00 && fwNum <= 6.72) {
+              else if (fwNum >= 6.00 && fwNum === 6.72) {
             var script = document.createElement('script');
             script.src = "672/exp_loader.js";
             script.onerror = onScriptError;
