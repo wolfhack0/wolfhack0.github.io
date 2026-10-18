@@ -53,11 +53,19 @@ if (!isPS4) {
             script.onerror = onScriptError;
             document.head.appendChild(script);
         }
-              else if ( fwNum === 6.72) {
-            var script = document.createElement('script');
-            script.src = "672/jb.js";
-            script.onerror = onScriptError;
-            document.head.appendChild(script);
+             else if (fwNum === 6.72) {
+    var script = document.createElement('script');
+    script.src = "672/exp_loader.js";
+    script.onerror = function () {
+        document.getElementById("msgs").textContent =
+            "Failed to load exp_loader.js";
+    };
+    script.onload = function () {
+        document.getElementById("msgs").textContent =
+            "exp_loader.js loaded successfully";
+    };
+    document.head.appendChild(script);
+};
         }
         else if (fwNum >= 9.00 && fwNum <= 9.60) {
             var script = document.createElement('script');
