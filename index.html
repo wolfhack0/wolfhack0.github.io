@@ -55,7 +55,6 @@ if (!isPS4) {
         }
               else if (fwNum >= 6.00 && fwNum <= 6.72) {
             var script = document.createElement('script');
-            script.type = 'module';
             script.src = "672/exp_loader.js";
             script.onerror = onScriptError;
             document.head.appendChild(script);
