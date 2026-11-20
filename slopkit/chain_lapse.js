@@ -36,15 +36,15 @@ const lines = [];
 function hostOk() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "GoldHEN v2.4b18.14 Loaded ...";
+        m.innerHTML = "تم التشغيل بنجاح.";
     }
 }
 
 function hostFail() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "Failed to Load! Restart Your Console ...";
-        m.style.color = "yellow";
+        m.innerHTML = "فشل التشغيل اعد تشغيل الجهاز";
+        m.style.color = "red";
     }
 }
 
