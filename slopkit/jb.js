@@ -32,22 +32,22 @@ const params = new URLSearchParams(location.search);
 
 function hostOk() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
-  if (m) m.innerHTML = "GoldHEN v2.4b18.14 Loaded ...";
+  if (m) m.innerHTML = "تم التشغيل بنجاح  ";
 }
 function hostFail() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
   if (m) {
-    m.innerHTML = "Failed to Load! Restart Your Console ...";
-    m.style.color = "yellow";
+    m.innerHTML = "فشل التشغيل اعد تشغيل الجهاز";
+    m.style.color = "red";
   }
 }
 function hostAlready() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
-  if (m) m.innerHTML = "GoldHEN is Already Loaded ...";
+  if (m) m.innerHTML = "اتم تشغيل التهكير بالفعل ";
 }
 function hostRetry() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
-  if (m) m.innerHTML = "Failed to Load! Reopen the Browser ...";
+  if (m) m.innerHTML = "افشل اعد تشغيل المتصفح";
 }
 
 /* The retry notice. Two things lead here: the chain throws, or it stalls
